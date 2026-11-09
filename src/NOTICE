@@ -1,0 +1,50 @@
+Kopolart Palette
+Copyright (c) 2026 Kopolart — https://kopolart.ir
+
+This project is licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). You are free to share and adapt the
+material for any purpose, including commercially, provided that you give
+appropriate credit, provide a link to the license, and indicate if changes
+were made.
+
+Full license text: see the LICENSE file or
+https://creativecommons.org/licenses/by/4.0/
+
+--------------------------------------------------------------------------
+REQUIRED ATTRIBUTION
+--------------------------------------------------------------------------
+
+When you redistribute this project, a modified version of it, or a product
+that substantially uses it, include attribution in a form similar to:
+
+    "Kopolart Palette" by Kopolart (https://kopolart.ir),
+    licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+    Color-name, wavelength, and purity metadata are provided by the
+    Kopolart API (https://kopolart.ir).
+
+If you modified the files, state that changes were made. Do not suggest
+that Kopolart endorses you or your use of the project.
+
+--------------------------------------------------------------------------
+THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------
+
+1. Kopolart Color API
+   Endpoint: https://kopolart.ir/api/color/{hex}
+   The extension sends hexadecimal color codes to the Kopolart API to
+   retrieve Persian/English color names, wavelength, and purity data.
+   This data is provided by Kopolart and is distributed under the same
+   CC BY 4.0 terms. Attribution to Kopolart with a link to
+   https://kopolart.ir is required when the data is redistributed.
+
+2. Vazirmatn font
+   Files: src/assets/fonts/Vazirmatn-Medium.woff2
+          src/assets/fonts/Vazirmatn-ExtraBold.woff2
+   Copyright 2015 The Vazirmatn Project Authors
+   (https://github.com/rastikerdar/vazirmatn)
+   Licensed under the SIL Open Font License, Version 1.1.
+   Full license text: src/assets/fonts/OFL.txt
+
+3. Product name and marks
+   The CC BY 4.0 license does not grant trademark or branding rights.
+   The "Kopolart" name and logo remain the property of Kopolart.

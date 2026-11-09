@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Kopolart Palette",
+  "version": "1.1.0",
+  "description": "استخراج هوشمند، ذخیره، کپی و بررسی کنتراست پالت رنگ وب‌سایت‌ها با کپل آرت",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://kopolart.ir/*"
+  ],
+  "action": {
+    "default_title": "افزونه پالت رنگ کپل آرت",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  }
+}

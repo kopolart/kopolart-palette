@@ -1,0 +1,31 @@
+{
+  "name": "kopolart-palette",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Chrome/Edge extension that extracts a website's color palette, enriches it with Kopolart color data, and checks WCAG contrast.",
+  "license": "CC-BY-4.0",
+  "author": "Kopolart (https://kopolart.ir)",
+  "homepage": "https://kopolart.ir",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopolart/kopolart-palette.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kopolart/kopolart-palette/issues"
+  },
+  "keywords": [
+    "chrome-extension",
+    "manifest-v3",
+    "color-palette",
+    "wcag",
+    "accessibility",
+    "persian",
+    "kopolart"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

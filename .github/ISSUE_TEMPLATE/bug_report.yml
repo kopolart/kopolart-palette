@@ -1,0 +1,87 @@
+name: Bug report
+description: Report a reproducible problem with Kopolart Palette.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Kopolart Palette.
+        Please search existing issues before submitting, and never include
+        passwords, tokens, or private page content.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+      placeholder: The palette contains...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a website
+        2. Click the extension icon
+        3. Click "Extract palette"
+        4. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 130 / Edge 130
+    validations:
+      required: true
+
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Shown in the extensions page, for example 1.1.0.
+      placeholder: 1.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: site
+    attributes:
+      label: Site where it happened
+      description: URL, or a description if the page is private.
+      placeholder: https://example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output or screenshots
+      description: Open DevTools (F12) and paste any relevant errors. Drag images here if useful.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I am using the latest released version.
+          required: true
+        - label: The page is a regular http(s) page, not a browser internal page.
+          required: true
+        - label: I have removed any sensitive information from this report.
+          required: true

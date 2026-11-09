@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>افزونه پالت رنگ کپل آرت</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-mark">K</div>
+                <div>
+                    <h1>افزونه پالت رنگ <a title="کپل‌آرت؛ گرافیک، برنامه‌نویسی و خلاقیت" href="https://kopolart.ir/" target="_blank" rel="noopener noreferrer">کپل آرت</a></h1>
+                    <p>استخراج هوشمند، ذخیره و بررسی پالت رنگ سایت‌ها</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="card actions-card">
+                <div class="primary-actions">
+                    <button id="extractBtn" class="btn btn-primary">استخراج پالت رنگ</button>
+                    <button id="eyeDropperBtn" class="btn btn-eyedropper" title="انتخاب مستقیم رنگ از صفحه">
+                        <span class="btn-icon">💉</span>
+                        <span>قطره‌چکان</span>
+                    </button>
+                </div>
+
+                <!-- باکس نتیجه قطره‌چکان -->
+                <div id="eyedropperResult" class="eyedropper-result" style="display: none;">
+                    <div class="eyedropper-swatch" id="eyedropperSwatch"></div>
+                    <div class="eyedropper-info">
+                        <span id="eyedropperHex">#FFFFFF</span>
+                        <span id="eyedropperRgb" class="sub-text">rgb(255, 255, 255)</span>
+                    </div>
+                    <button id="eyedropperCopyBtn" class="btn btn-sm">کپی رنگ</button>
+                </div>
+
+                <div class="actions-grid">
+                    <button id="copyAllBtn" class="btn" disabled>کپی همه</button>
+                    <button id="downloadBtn" class="btn" disabled>دانلود JSON</button>
+                    <button id="saveTxtBtn" class="btn" disabled>ذخیره TXT</button>
+                    <button id="savePaletteBtn" class="btn btn-accent" disabled>ذخیره پالت</button>
+                </div>
+            </section>
+
+            <section class="card current-palette-card">
+                <div class="section-head">
+                    <h2>پالت فعلی</h2>
+                    <span id="siteLabel" class="site-label">سایتی انتخاب نشده</span>
+                </div>
+                <div id="paletteContainer" class="palette-grid empty">
+                    <div class="empty-state">برای شروع، روی دکمه «استخراج پالت رنگ» کلیک کنید</div>
+                </div>
+
+                <!-- بخش بررسی کنتراست و دسترسی‌پذیری WCAG -->
+                <div id="contrastBox" class="contrast-box" style="display: none;">
+                    <div class="contrast-header">
+                        <span class="contrast-title">بررسی خوانایی و کنتراست (WCAG)</span>
+                        <span id="contrastBadge" class="contrast-badge">AAA</span>
+                    </div>
+                    <div id="contrastSample" class="contrast-sample">
+                        <span>متن نمونه با رنگ تیره روی زمینه روشن</span>
+                    </div>
+                    <div class="contrast-details">
+                        <span id="contrastRatioText">نسبت کنتراست: ۰:۱</span>
+                        <span id="contrastStatusText" class="contrast-status">عالی برای تمام متون</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card saved-card">
+                <div class="section-head saved-head">
+                    <h2>پالت‌های ذخیره‌شده</h2>
+                    <input id="searchInput" class="search-input" type="text" placeholder="جستجو بر اساس نام یا آدرس..." />
+                </div>
+                <div id="savedPalettes" class="saved-list">
+                    <div class="empty-state">هنوز پالت رنگی ذخیره نشده است</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
