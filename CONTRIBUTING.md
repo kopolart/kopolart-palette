@@ -105,10 +105,11 @@ the release workflow verifies the tag, builds the archive, and publishes it.
 
 ## Licensing of contributions
 
-The project is licensed under CC BY 4.0. By submitting a contribution, you
-agree that it is provided under the same license and that you have the right to
-submit it. Do not contribute code or assets that are incompatible with
-CC BY 4.0 or the SIL Open Font License (for font files).
+Source code is licensed under the MIT License and artwork is licensed under
+CC BY 4.0. By submitting a contribution, you agree that your code is provided
+under MIT and your artwork under CC BY 4.0, and that you have the right to
+submit it. Do not contribute code or assets that are incompatible with those
+licenses or the SIL Open Font License (for font files).
 
 ## Security
 

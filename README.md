@@ -10,7 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY%204.0-865131?style=flat-square" alt="License: CC BY 4.0" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square" alt="License: MIT" /></a>
+  <a href="LICENSE-ARTWORKS"><img src="https://img.shields.io/badge/artwork-CC%20BY%204.0-865131?style=flat-square" alt="Artwork license: CC BY 4.0" /></a>
   <a href="src/manifest.json"><img src="https://img.shields.io/badge/manifest-v3-535e7b?style=flat-square" alt="Manifest V3" /></a>
   <a href="#browser-support"><img src="https://img.shields.io/badge/Chrome%20%2F%20Edge-95%2B-b8864e?style=flat-square" alt="Chrome and Edge 95+" /></a>
   <a href="https://kopolart.ir"><img src="https://img.shields.io/badge/made%20by-Kopolart-bd2f2f?style=flat-square" alt="Made by Kopolart" /></a>
@@ -184,6 +185,7 @@ button will show an unsupported message.
 │   │   └── icons/
 │   ├── content.js
 │   ├── LICENSE
+│   ├── LICENSE-ARTWORKS
 │   ├── manifest.json
 │   ├── NOTICE
 │   ├── popup.css
@@ -192,7 +194,8 @@ button will show an unsupported message.
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── LICENSE
+├── LICENSE                  # MIT (source code)
+├── LICENSE-ARTWORKS         # CC BY 4.0 (icons, banner, screenshots)
 ├── NOTICE
 ├── PRIVACY.md
 ├── README.fa.md
@@ -241,19 +244,31 @@ Issues and pull requests are welcome. Please read
 
 ## License and attribution
 
-Kopolart Palette is free to use, including commercially, under the
-[Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).
+Kopolart Palette uses a split license:
 
-**Attribution is required.** If you share this project, a modified version, or
-a product that substantially uses it, include wording similar to:
+- **Source code — [MIT](LICENSE).** Use, modify, and redistribute the code,
+  including commercially, as long as the copyright and permission notice are
+  kept.
+- **Artwork and visual assets — [CC BY 4.0](LICENSE-ARTWORKS).** The extension
+  icons, banner, screenshots, and social preview may be reused with
+  attribution.
+- **Kopolart color metadata — CC BY 4.0.** Persian/English names, wavelength,
+  and purity returned by the Kopolart API require attribution when
+  redistributed.
+
+**Attribution for artwork and color data.** When you share the artwork, a
+modified version, or a product that substantially uses the Kopolart color
+metadata, include wording similar to:
 
 ```text
-"Kopolart Palette" by Kopolart (https://kopolart.ir),
+"Kopolart Palette" artwork by Kopolart (https://kopolart.ir),
 licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 Color metadata is provided by the Kopolart API (https://kopolart.ir).
 ```
 
-If you modified the files, say so. Do not imply that Kopolart endorses your use.
+If you modified the artwork, say so. Do not imply that Kopolart endorses your
+use. The MIT License does not require attribution beyond keeping the copyright
+and permission notice with copies of the code.
 
 - **Kopolart API** — color names, wavelength, and purity data come from
   `https://kopolart.ir/api/color/{hex}` and require the attribution above when
@@ -261,8 +276,7 @@ If you modified the files, say so. Do not imply that Kopolart endorses your use.
 - **Vazirmatn** — Copyright 2015 The Vazirmatn Project Authors, licensed under
   the SIL Open Font License 1.1. The full text is in
   [`src/assets/fonts/OFL.txt`](src/assets/fonts/OFL.txt).
-- **Trademarks** — the CC BY 4.0 license does not grant rights to the Kopolart
-  name or logo.
+- **Trademarks** — neither license grants rights to the Kopolart name or logo.
 
 Kopolart Palette is not affiliated with the websites you scan. Color names and
 measurements are provided for design assistance, not as scientific

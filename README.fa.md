@@ -10,7 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY%204.0-865131?style=flat-square" alt="مجوز: CC BY 4.0" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square" alt="مجوز: MIT" /></a>
+  <a href="LICENSE-ARTWORKS"><img src="https://img.shields.io/badge/artwork-CC%20BY%204.0-865131?style=flat-square" alt="مجوز آثار هنری: CC BY 4.0" /></a>
   <a href="src/manifest.json"><img src="https://img.shields.io/badge/manifest-v3-535e7b?style=flat-square" alt="Manifest V3" /></a>
   <a href="#پشتیبانی-مرورگرها"><img src="https://img.shields.io/badge/Chrome%20%2F%20Edge-95%2B-b8864e?style=flat-square" alt="کروم و اج ۹۵+" /></a>
   <a href="https://kopolart.ir"><img src="https://img.shields.io/badge/made%20by-Kopolart-bd2f2f?style=flat-square" alt="ساخته‌شده توسط کپل‌آرت" /></a>
@@ -184,6 +185,7 @@ flowchart LR
 │   │   └── icons/
 │   ├── content.js
 │   ├── LICENSE
+│   ├── LICENSE-ARTWORKS
 │   ├── manifest.json
 │   ├── NOTICE
 │   ├── popup.css
@@ -192,7 +194,8 @@ flowchart LR
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── LICENSE
+├── LICENSE                  # MIT (کد منبع)
+├── LICENSE-ARTWORKS         # CC BY 4.0 (آیکون‌ها، بنر، تصاویر)
 ├── NOTICE
 ├── PRIVACY.md
 ├── README.fa.md
@@ -240,22 +243,28 @@ issue عمومی از [SECURITY.md](SECURITY.md) استفاده کنید.
 
 ## مجوز و اعتباردهی
 
-پالت رنگ کپل‌آرت، از جمله برای استفاده تجاری، تحت
-[مجوز بین‌المللی Creative Commons Attribution 4.0 (CC BY 4.0)](LICENSE)
-رایگان است.
+پالت رنگ کپل‌آرت مجوز تفکیک‌شده دارد:
 
-**ذکر منبع الزامی است.** اگر این پروژه، نسخه تغییریافته آن یا محصولی که
-به‌طور اساسی از آن استفاده می‌کند را منتشر می‌کنید، متنی مشابه زیر را قرار
-دهید:
+- **کد منبع — [MIT](LICENSE).** استفاده، تغییر و بازنشر کد، از جمله برای
+  مقاصد تجاری، آزاد است؛ به شرط حفظ اعلان حق نشر و مجوز.
+- **آثار هنری و دارایی‌های بصری — [CC BY 4.0](LICENSE-ARTWORKS).** استفاده از
+  آیکون‌ها، بنر، تصاویر و پیش‌نمایش اجتماعی با ذکر منبع آزاد است.
+- **اطلاعات رنگ کپل‌آرت — CC BY 4.0.** نام فارسی و انگلیسی، طول موج و خلوص
+  دریافتی از API کپل‌آرت در بازنشر نیاز به اعتباردهی دارد.
+
+**اعتباردهی برای آثار هنری و داده رنگ.** اگر آثار هنری، نسخه تغییریافته آن یا
+محصولی که به‌طور اساسی از اطلاعات رنگ کپل‌آرت استفاده می‌کند را منتشر
+می‌کنید، متنی مشابه زیر را قرار دهید:
 
 ```text
-"Kopolart Palette" by Kopolart (https://kopolart.ir),
+"Kopolart Palette" artwork by Kopolart (https://kopolart.ir),
 licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 Color metadata is provided by the Kopolart API (https://kopolart.ir).
 ```
 
-اگر فایل‌ها را تغییر داده‌اید، این موضوع را مشخص کنید و القا نکنید که کپل‌آرت
-استفاده شما را تأیید کرده است.
+اگر آثار هنری را تغییر داده‌اید، این موضوع را مشخص کنید و القا نکنید که
+کپل‌آرت استفاده شما را تأیید کرده است. مجوز MIT جز حفظ اعلان حق نشر و مجوز در
+نسخه‌های کد، الزام دیگری برای اعتباردهی ندارد.
 
 - **API کپل‌آرت** — نام رنگ، طول موج و خلوص از
   `https://kopolart.ir/api/color/{hex}` دریافت می‌شود و در بازنشر نیاز به
@@ -263,7 +272,7 @@ Color metadata is provided by the Kopolart API (https://kopolart.ir).
 - **وزیرمتن** — Copyright 2015 The Vazirmatn Project Authors، تحت مجوز
   SIL Open Font License 1.1. متن کامل در
   [`src/assets/fonts/OFL.txt`](src/assets/fonts/OFL.txt) قرار دارد.
-- **علائم تجاری** — مجوز CC BY 4.0 حق استفاده از نام یا لوگوی کپل‌آرت را
+- **علائم تجاری** — هیچ‌یک از دو مجوز حق استفاده از نام یا لوگوی کپل‌آرت را
   نمی‌دهد.
 
 افزونه پالت رنگ کپل‌آرت وابسته به وب‌سایت‌هایی که اسکن می‌کنید نیست. نام‌ها و

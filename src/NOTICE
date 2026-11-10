@@ -1,29 +1,44 @@
 Kopolart Palette
-Copyright (c) 2026 Kopolart — https://kopolart.ir
-
-This project is licensed under the Creative Commons Attribution 4.0
-International License (CC BY 4.0). You are free to share and adapt the
-material for any purpose, including commercially, provided that you give
-appropriate credit, provide a link to the license, and indicate if changes
-were made.
-
-Full license text: see the LICENSE file or
-https://creativecommons.org/licenses/by/4.0/
+Copyright (c) 2026 Kopolart (Ali Yousefi) — https://kopolart.ir
 
 --------------------------------------------------------------------------
-REQUIRED ATTRIBUTION
+LICENSE MAP
 --------------------------------------------------------------------------
 
-When you redistribute this project, a modified version of it, or a product
-that substantially uses it, include attribution in a form similar to:
+Source code — MIT License
+  Applies to the JavaScript, HTML, CSS, extension manifest, scripts, and
+  repository tooling. Full text: LICENSE.
 
-    "Kopolart Palette" by Kopolart (https://kopolart.ir),
+Artwork and visual assets — CC BY 4.0
+  Applies to src/assets/icons/, docs/banner.png, docs/screenshots/, and
+  docs/social-preview.png. Full text: LICENSE-ARTWORKS or
+  https://creativecommons.org/licenses/by/4.0/
+
+Kopolart color metadata — CC BY 4.0
+  Persian and English color names, wavelength, and purity returned by
+  https://kopolart.ir/api/color/{hex}.
+
+Vazirmatn font — SIL Open Font License 1.1
+  Full text: src/assets/fonts/OFL.txt
+
+--------------------------------------------------------------------------
+ATTRIBUTION FOR ARTWORK AND COLOR DATA
+--------------------------------------------------------------------------
+
+When you redistribute the artwork, a modified version of it, or a product
+that substantially uses the Kopolart color metadata, include attribution in a
+form similar to:
+
+    "Kopolart Palette" artwork by Kopolart (https://kopolart.ir),
     licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
     Color-name, wavelength, and purity metadata are provided by the
     Kopolart API (https://kopolart.ir).
 
-If you modified the files, state that changes were made. Do not suggest
+If you modified the artwork, state that changes were made. Do not suggest
 that Kopolart endorses you or your use of the project.
+
+The MIT License does not require attribution beyond keeping the copyright and
+permission notice with copies of the code.
 
 --------------------------------------------------------------------------
 THIRD-PARTY COMPONENTS
@@ -33,9 +48,9 @@ THIRD-PARTY COMPONENTS
    Endpoint: https://kopolart.ir/api/color/{hex}
    The extension sends hexadecimal color codes to the Kopolart API to
    retrieve Persian/English color names, wavelength, and purity data.
-   This data is provided by Kopolart and is distributed under the same
-   CC BY 4.0 terms. Attribution to Kopolart with a link to
-   https://kopolart.ir is required when the data is redistributed.
+   This data is provided by Kopolart and is distributed under CC BY 4.0.
+   Attribution to Kopolart with a link to https://kopolart.ir is required
+   when the data is redistributed.
 
 2. Vazirmatn font
    Files: src/assets/fonts/Vazirmatn-Medium.woff2
@@ -46,5 +61,5 @@ THIRD-PARTY COMPONENTS
    Full license text: src/assets/fonts/OFL.txt
 
 3. Product name and marks
-   The CC BY 4.0 license does not grant trademark or branding rights.
-   The "Kopolart" name and logo remain the property of Kopolart.
+   Neither the MIT License nor CC BY 4.0 grants trademark or branding
+   rights. The "Kopolart" name and logo remain the property of Kopolart.

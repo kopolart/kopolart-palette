@@ -42,9 +42,11 @@ if (!popup) errors.push("manifest.json is missing action.default_popup");
 
 const requiredFiles = [
   "LICENSE",
+  "LICENSE-ARTWORKS",
   "NOTICE",
   "PRIVACY.md",
   "src/LICENSE",
+  "src/LICENSE-ARTWORKS",
   "src/NOTICE",
   "src/content.js",
   "src/popup.css",
@@ -80,7 +82,7 @@ for (const match of css.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
   await requireFile(path.join("src", ref), `src/${ref} (referenced by popup.css)`);
 }
 
-for (const file of ["LICENSE", "NOTICE"]) {
+for (const file of ["LICENSE", "LICENSE-ARTWORKS", "NOTICE"]) {
   try {
     const [rootCopy, srcCopy] = await Promise.all([
       readFile(path.join(root, file), "utf8"),
@@ -100,7 +102,8 @@ for (const script of ["src/popup.js", "src/content.js"]) {
   }
 }
 
-await requireText("LICENSE", "Attribution 4.0 International", "LICENSE");
+await requireText("LICENSE", "MIT License", "LICENSE");
+await requireText("LICENSE-ARTWORKS", "Attribution 4.0 International", "artwork license");
 await requireText("src/assets/fonts/OFL.txt", "SIL OPEN FONT LICENSE", "font license");
 await requireText("NOTICE", "Kopolart Color API", "NOTICE");
 

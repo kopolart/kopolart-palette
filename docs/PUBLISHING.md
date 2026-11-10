@@ -15,8 +15,9 @@ GitHub/                        <- repository root
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── LICENSE                    CC BY 4.0
-├── NOTICE                     Kopolart API and Vazirmatn attribution
+├── LICENSE                    MIT (source code)
+├── LICENSE-ARTWORKS           CC BY 4.0 (icons, banner, screenshots)
+├── NOTICE                     License map, Kopolart API and Vazirmatn attribution
 ├── PRIVACY.md
 ├── README.md                  English
 ├── README.fa.md               Persian
@@ -195,6 +196,6 @@ check or ship mismatched files.
 - [ ] Release tag matches the manifest version.
 - [ ] The release zip contains `manifest.json` at its root, not a nested folder.
 - [ ] The privacy policy URL is public.
-- [ ] `LICENSE`, `NOTICE`, and the font license are present in the repository.
+- [ ] `LICENSE`, `LICENSE-ARTWORKS`, `NOTICE`, and the font license are present in the repository.
 - [ ] The Chrome Web Store listing uses the prepared text and assets.
 - [ ] The primary source of truth for `src/` is documented for future work.

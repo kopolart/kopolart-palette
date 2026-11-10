@@ -28,4 +28,4 @@
 - [ ] The change is focused and does not include unrelated edits
 - [ ] Manifest and package versions were not changed unless this is a release
 - [ ] New user-facing strings are in Persian and match the existing tone
-- [ ] I have read the contribution guidelines and agree to license my contribution under CC BY 4.0
+- [ ] I have read the contribution guidelines and agree to license my contribution under the project's split license (MIT for code, CC BY 4.0 for artwork)
